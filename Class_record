@@ -1,0 +1,32 @@
+#Class in davinch academy.
+
+#10/23 재귀함수 수업
+재귀함수
+
+ #재귀함수 수업
+    # 함수수업부터 시작
+    # 함수
+#n번째 피보나치 수열의 값을 구하는 프로그램 작성
+
+# def fibo(n) :
+#     if n==0 :
+#         return 0
+#     if n==1 :
+#         return 1
+    
+#     return fibo(n-1)+fibo(n-2)
+# print(fibo(5))
+
+#하노이탑 문제
+# def hanoi(n, sta, end, mid) :
+#     if n==1 :
+#         print(sta, end)
+#         return
+#     hanoi(n-1, sta, mid, end)
+#     print(sta, end)
+#     hanoi(n-1, mid, end, sta)
+# a = int(input())
+# print(2**a-1)
+# hanoi(a,1,3,2)
+
+#10/30
