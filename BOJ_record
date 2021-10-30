@@ -103,9 +103,128 @@
 #     print(li[k])
 # 셀프넘버 실패
 
+#셀프넘버2트
+
+# def self(a) :
+#     global selfnum
+#     selfnum =[]
+#     for i in range(10000) :
+#     n = a
+#     a = list(input())
+#     if len(n) == 1 :
+#         n += n + n[0]
+#         selfnum.pop(n)
+#     elif len(n) ==2 :
+#         n += n + n[0] + n[1]
+#         selfnum.pop(n)
+#     elif len(n) == 3 :
+#         n += n + n[0] + n[1] + n[2]
+#         selfnum.pop(n)
+#     elif len(n) == 4 :
+#         n += n + n[0] + n[1] + n[2] + n[4]
+#         selfnum.pop(n)
+#     return
 
 
+# cnt = 0
+# for i in range(1, 10001) :
+#     selfnum.append(i)
+# total = 0
+# while True :
+#     if cnt >= 10000 :
+#         for i in range(len(selfnum)) :
+#             print(selfnum[i])
+#             break
+#     self()
+
+
+#셀프넘버 실패
+
+#셀프넘버 3트 ( 도움 )
+
+# def d(n) :
+#     rst = n
+#     while n!=0 :
+#         rst = n%10
+#         n//=10
+#     return rst
+
+#     N = 10000 +1
+#     for i in range(1,N)
+
+
+# mt_list = [i for i in range(10)]
+
+# self_n = [True for _ in range(N)]
+
+# def d(n):
+#     rst = n
+#     while n!=0 :
+#         rst += n%10
+#         n//=10
+#     return rst
+
+# N=10001
+# self_num = [True for _ in range(N)]
+# for i in range(1,N) :
+#     rst = d(i)
+#     if rst < N :
+#         self_num[rst]=False
+# for i in range(1, N):
+#     if self_num[i] :
+#         print(i)
+
+#셀프넘버 성공
+
+#한수(도움)
+# def hansu(n) :
+#     if n < 100 :
+#         return True
+#     if n == 1000 :
+#         return False
+#     n1 = n%10
+#     n//=10
+#     n2 = n%10
+#     n3 = n//10
+
+#     if n3 - n2 == n2 - n1 :
+#         return True
+#     else :
+#         return False
+# N = int(input())
+# cnt = 0
+# for i in range(1, N+1) :
+#     if hansu(i) :
+#         cnt += 1
+#     else :
+#         pass
+
+# print(cnt)
+
+#한수 성공
+
+#아스키 코드
 
 # a = input()
 # print(ord("{}".format(a)))
+
+#아스키 코드 성공
+
+#팩토리얼
+
+n=1
+a = int(input())
+if a == 0 :
+    print(1)
+else :
+    for i in range(1,a+1) :
+        if i == a :
+            n*=i
+            print(n)
+            break
+        else :
+            n*=i
+            
+# 팩토리얼 성공
+
 
