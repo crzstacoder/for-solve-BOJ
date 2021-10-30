@@ -2,4 +2,110 @@
 #start at the bottom,
 #start in Bronze 2
 
-#
+#더하기 사이클
+
+# def cycle(a) :
+#     b = list(a)
+#     global cnt
+#     cnt = 0
+#     while True :
+#         if len(b) == 1 :
+#             b = ['0',b[0]]
+#         else :
+#             pass
+#         bn = int(b[0]) + int(b[1])
+#         b = list(b[1] + str(bn%10))
+        
+#         if int(b[0]+b[1])==int(a):
+#             cnt += 1
+#             print(cnt)
+#             break
+#         else :
+#             cnt += 1
+        
+#     return
+# num = input()
+# cycle(num)
+
+# 더하기 사이클 성공
+
+#최댓값
+# num = []
+# for i in range(9) :                         #숫자 리스트
+#     num.append(int(input()))
+
+# for j in range(9) :
+#     if num[j] == max(num) :
+#         print(max(num))
+#         print(j+1)
+#         break
+#     else :
+#         pass
+
+#최댓값 성공
+
+#평균 (세준이가 기말 망쳐서 점수조작하는 문제)
+
+# import sys
+# num = int(input())
+# score = list(map(float,sys.stdin.readline().split()))
+# m = max(score)
+# newscore = []
+# total = 0
+# for i in range(num) :
+#     newscore.append(score[i]/m*100)
+# for j in range(num) :
+#     total += newscore[j]
+# print(total/num)
+
+# 평균 성공
+
+#평균은 넘겠지
+
+# import sys
+
+# count = 0
+# total = 0
+# avg = 0
+# num = int(input())
+# for i in range(num) :
+#     b=list(map(int,sys.stdin.readline().split()))
+#     for j in range(1,b[0]+1) :
+#         total += b[j]
+#         if j == b[0] :
+#             avg = total/b[0]
+#             total = 0
+#     for k in range(1,b[0]+1) :
+#         if b[k] > avg :
+#             count += 1
+#         else :
+#             pass
+#     print(format(((count/b[0])*100),".3f")+"%")
+#     avg = 0
+#     count = 0
+
+#평균은 넘겠지 성공
+
+# #셀프넘버
+# li = []
+# for i in range(1,10001) :
+#     li.append(i)
+# for j in range(10000) :
+#     if j//10 == 0  :
+#         li.pop(j+j)
+#     elif len(str(j)) == 2 :
+#         li.pop(i+(i//10)+(i%10))
+#     elif len(str(j)) == 3 :
+#         li.pop(i+(i//100)+(i%100//10)+(i%10))
+#     elif len(str(j)) == 4 :
+#         li.pop(i+(i//1000))+(i%1000//100)+(i%100//10)+(i%10)
+# for k in range(len(li)) :
+#     print(li[k])
+# 셀프넘버 실패
+
+
+
+
+# a = input()
+# print(ord("{}".format(a)))
+
